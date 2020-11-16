@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="background">
+        <div class="svg-container">
+          <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+            <filter id="distortionFilter">
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.07 0.01"
+                numOctaves="5"
+                seed="2"
+                stitchTiles="stitch"
+                x="0%"
+                y="0%"
+                width="100%"
+                height="100%"
+                result="noise"
+              />
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="noise"
+                scale="0"
+                xChannelSelector="R"
+                yChannelSelector="B"
+                x="0%"
+                y="0%"
+                width="100%"
+                height="100%"
+                filterUnits="userSpaceOnUse"
+              />
+            </filter>
+            <g filter="url(#distortionFilter)">
+              <image
+                class="distort__img"
+                x="50"
+                y="50"
+                xlink:href="img/1.jpg"
+                height="350"
+                width="250"
+              />
+              <image
+                class="distort__img"
+                x="50"
+                y="50"
+                xlink:href="img/2.jpg"
+                height="350"
+                width="250"
+              />
+              <image
+                class="distort__img"
+                x="50"
+                y="50"
+                xlink:href="img/3.jpg"
+                height="350"
+                width="250"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="options">
+          <div class="text-wrapper">
+            <h2 class="outlined">MOBILES</h2>
+            <h2 class="back">MOBILES</h2>
+          </div>
+          <div class="text-wrapper">
+            <h2 class="outlined">LAPTOPS</h2>
+            <h2 class="back">LAPTOPS</h2>
+          </div>
+          <div class="text-wrapper">
+            <h2 class="outlined">ACCESS</h2>
+            <h2 class="back">ACCESS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <h4>Logo</h4>
+      <div>
+        <i class="fa fa-bars menu-btn"></i>
+      </div>
+    </nav>
+    <!-- <section>
+      <div class="list">
+        <div class="list-wrapper">
+          <p>DISCOVER</p>
+          <h4>
+            Exciting Stores in K11 Musea that You Won't Find Elsewhere in HK
+          </h4>
+        </div>
+        <div class="list-wrapper">
+          <p>FASHION</p>
+          <h4>
+            Exciting Stores in K11 Musea that You Won't Find Elsewhere in HK
+          </h4>
+        </div>
+        <div class="list-wrapper">
+          <p>BEAUTY</p>
+          <h4>
+            Exciting Stores in K11 Musea that You Won't Find Elsewhere in HK
+          </h4>
+        </div>
+      </div>
+      <div class="image">
+        <svg class="distort" width="450" height="450" viewBox="0 0 450 450">
+          <filter id="distortionFilter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.1"
+              numOctaves="5"
+              seed="2"
+              stitchTiles="noStitch"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              result="noise"
+            />
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="noise"
+              scale="0"
+              xChannelSelector="R"
+              yChannelSelector="B"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              filterUnits="userSpaceOnUse"
+            />
+          </filter>
+          <g filter="url(#distortionFilter)">
+            <image
+              class="distort__img"
+              x="50"
+              y="50"
+              xlink:href="img/1.jpg"
+              height="450"
+              width="450"
+            />
+            <image
+              class="distort__img"
+              x="50"
+              y="50"
+              xlink:href="img/2.jpg"
+              height="450"
+              width="450"
+            />
+            <image
+              class="distort__img"
+              x="50"
+              y="50"
+              xlink:href="img/3.jpg"
+              height="450"
+              width="450"
+            />
+          </g>
+        </svg>
+      </div>
+    </section> -->
+  </body>
+</html>

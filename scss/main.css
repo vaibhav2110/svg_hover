@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1c1c28;
+}
+
+nav {
+  width: 80%;
+  padding: 40px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  color: #fff;
+}
+
+nav h4 {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.svg-container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+}
+
+.distort {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 98;
+}
+
+.distort__img {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.background {
+  position: absolute;
+  width: 140%;
+  left: -20%;
+  height: 120%;
+  background-color: #28293d;
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+  top: -140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.options {
+  position: absolute;
+  top: 40%;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.text-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-wrapper h2 {
+  position: absolute;
+  font-family: "Oswald";
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+  font-size: 62px;
+  color: transparent;
+}
+
+.text-wrapper .outlined {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  z-index: 99;
+}
+
+section {
+  padding: 200px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .list {
+  padding-right: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .image {
+  padding-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 400px;
+  overflow: hidden;
+}
+
+section .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-wrapper {
+  padding: 20px 0;
+  color: gray;
+  cursor: pointer;
+}
+
+.list-wrapper p {
+  font-family: "Oswald";
+}
+
+.list-wrapper h4 {
+  font-size: 24px;
+}
+
+.list-wrapper:hover p {
+  color: salmon;
+}
+
+.list-wrapper:hover h4 {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
